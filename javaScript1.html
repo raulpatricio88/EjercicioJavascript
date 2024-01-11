@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos con Javascript</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="js/funciones.js"></script>
+    <script>
+        function Saludar(){
+            var nom=document.getElementById("nom").value;
+            alert('Bienvenid@ ' + nom);
+        }
+        /* crear función que muestre mensaje indicando si el numero es par o impar*/
+        function Parimpar(){
+            var num=document.getElementById("nume1").value;
+            if (num%2==0){
+                alert('El número ' + num + ' Es par');
+            }
+            else{
+                alert('El número ' + num + ' Es impar');
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Ejemplos con Javascript</h1>
+        <hr>    <!--linea divisoria-->
+        <h3>Crear saludo para usuario</h3>
+        <div class="form-group">
+            <label for="nom">Nombre:</label>
+            <input type="text" class="form-control" id="nom" name="nom" required>
+        </div>
+        <br>
+        <input type="button" id="btn1" name="btn1" value="Saludar" onclick="Saludar()">
+        <hr>
+        <h3>Número par o impar?</h3>
+        <div class="form-group">
+            <label for="nume1"></label>
+            <input type="number" class="form-control" id="nume1" name="nume1" min="1" required>
+        </div>
+        <br>
+        <input type="button" id="btn2" name="btn2" value="Par o Impar" onclick="Parimpar()">
+        <hr>
+        <h3>Divisores de un número</h3>
+        <div class="form-group">
+            <label for="nume2"></label>
+            <input type="number" class="form-control" id="nume2" name="nume2" min="1" required>
+        </div>
+        <br>
+        <input type="button" id="btn3" name="btn3" value="Cuántos divisores tiene?" 
+                onclick="Divisores()">
+        <hr>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

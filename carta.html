@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <script src="js/funciones.js"></script>
+
+</head>
+<body style="background-color: aqua;" >
+    <div class="container">
+        <h2>Carta de postulacion</h2>
+
+        <form action="#" method="post" name="datos">
+            
+            <div class="form-group">
+                <label for="rut">Rut: </label>
+                <input type="text" id="rut" name="rut" placeholder="Escriba su rut aqui..." 
+                    class="form-control" minlength="9" maxlength="10" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nom">Nombre: </label>
+                <input type="text" id="nom" name="nom" placeholder="Escriba su nombre aqui... " 
+                    class="form-control" minlength="3" maxlength="20" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ape1">Apellido Paterno: </label>
+                <input type="text" id="ape1" name="ape1" 
+                    placeholder="Escriba su apellido paterno aquí..." class="form-control" minlength="3"
+                    maxlength="20" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ape2">Apellido Materno: </label>
+                <input type="text" id="ape2" name="ape2" 
+                    placeholder="Escriba su apellido materno aquí..." class="form-control" minlength="3"
+                    maxlength="20" required>
+            </div>
+
+            <div class="form-group">
+                <label for="edad">Edad: </label>
+                <input type="number" id="edad" name="edad" 
+                    placeholder="Escriba su edad aquí..." class="form-control" minlength="2"
+                    maxlength="2" required>
+            </div>
+
+            <div class="form-group">
+               <label for="genero" >Genero</label> 
+                <select id="genero" class="form-control">
+                    <option value="error">Seleccione un genero..</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="celu">Celular: </label>
+                <input type="number" id="celu" name="celu" 
+                    placeholder="Escriba su celular aquí..." class="form-control" minlength="9"
+                    maxlength="12" required>
+            </div>
+
+            <div class="form-group">
+                <label for="motivo" >Motivo de postulacion</label> 
+                 <select id="motivo" class="form-control">
+                     <option value="error">Seleccione un motivo..</option>
+                     <option value="1">Conseguir un trabajo full time</option>
+                     <option value="2">Ser un aporte valioso a la empresa</option>
+                     
+                 </select>
+             </div>
+
+            <!--
+            <label for="peliculas">Seleccione peliculas:</label>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" 
+                    value="titanic" id="peli1">
+                <label for="peli1" class="form-check-label">Titanic</label>
+            </div>
+
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" 
+                    value="endgame" id="peli2">
+                <label for="peli2" class="form-check-label">End Game</label>
+            </div>
+
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" 
+                    value="rapidoyfurioso" id="peli3">
+                <label for="peli3" class="form-check-label">Rapido y Furioso Infinito</label>
+            </div>-->
+
+            <!--checkbox en linea
+            <br>
+            <label for="vehiculos">Seleccione marca de vehiculo:</label>
+            <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input" 
+                    value="nissan" id="auto1">
+                <label for="auto1" class="form-check-label">Nissan</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input" 
+                    value="bmw" id="auto2">
+                <label for="auto2" class="form-check-label">BMW</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input" 
+                    value="chevro" id="auto3">
+                <label for="auto3" class="form-check-label">Chevrolet</label>
+            </div>
+            -->
+
+            <div class="form-group">
+                <label for="carta">Sus datos son: </label>
+                <textarea id="carta" name="carta" rows="7" cols="50" class="form-control" >
+                </textarea>
+            </div>
+
+            <br>
+            <input type="button" value="Crear carta" class="btn btn-primary" onclick="CrearCarta()">
+            
+            
+
+
+        </form>
+
+    </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
